@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: stockwatch-database
+    restart: always
+    build:
+      context: .
+      dockerfile: ../docker/postgres_database.Dockerfile
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+      - POSTGRES_USER=stockdata
+      - POSTGRES_DB=stockdata
+    volumes:
+      - database_volumes:/var/lib/postgresql/data
+    ports:
+      - '0.0.0.0:5432:5432'
+
+  adminer:
+    image: stockwatch-adminer
+    restart: always
+    build:
+      context: .
+      dockerfile: ../docker/adminer_database_gui.Dockerfile
+    ports:
+      - '0.0.0.0:8080:8080'
+
+volumes:
+  database_volumes:

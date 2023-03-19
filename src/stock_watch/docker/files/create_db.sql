@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS reddit_submissions (
+    author_flair_text text,
+    clicked boolean,
+    created_utc numeric,
+    distinguished text,
+    edited numeric,
+    id text,
+    is_original_content boolean,
+    is_self boolean,
+    link_flair_text text,
+    locked boolean,
+    name text,
+    num_comments integer,
+    over_18 boolean,
+    permalink text,
+    saved boolean,
+    score integer,
+    selftext text,
+    spoiler boolean,
+    title text,
+    upvote_ratio real,
+    url text
+);

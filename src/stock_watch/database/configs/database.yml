@@ -1,0 +1,5 @@
+credentials:
+  dbname: stockdata
+  user: stockdata
+  host: localhost
+  password: mysecretpassword
