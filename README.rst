@@ -1,5 +1,4 @@
-.. image:: https://codecov.io/gh/zackjohnson8/StockWatch/branch/master/graph/badge.svg?token=ZAOUINTOA8
- :target: https://codecov.io/gh/zackjohnson8/StockWatch
+i'm basicallY a beginner python user so if you see something that doesn't make don't laugh(LOL).what i need help with:adding a tdameritrade analysis and ordering system.help and suggestions would be greatly appreciated,THANKS
 
 =================
 About The Project
@@ -62,8 +61,8 @@ Setup your virtual environment
 
 Open the newly cloned /StockWatch directory in your terminal and run the following commands::
 
-    $ python3 -m venv venv
-    $ source venv/bin/activate
+    $ python -m venv venv
+    $ .\venv\Scripts\Activate
 
 
 Install dependencies
@@ -79,7 +78,7 @@ Run the application
 
 To run the application, run the following command::
 
-    $ python3 -m src.stock_watch
+    $ python -m src.stock_watch
 
 
 ============
@@ -102,7 +101,5 @@ License
 =======
 Distributed under the MIT License. See the `LICENSE` file for more information.
 
-=======
-Contact
-=======
-Zachary Johnson - @zackjohnson8 - zackjohnson8@gmail.com
+
+
